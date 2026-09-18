@@ -1,0 +1,31 @@
+name: Verify Scam Shield
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - run: npm ci
+      - run: npm ci --prefix functions
+      - run: npm run prepare:functions
+      - run: npm run lint
+      - run: npm test
+      - run: npm run benchmark
+      - run: npm run build
+      - run: npm run test:integration
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - run: npm run test:e2e:full
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: diagnostic-traces
+          path: test-results/

@@ -1,0 +1,11 @@
+{
+  "status": "DEVELOPER REGRESSION ONLY — NOT RELEASE ACCEPTANCE",
+  "fixtures": 200,
+  "positivePatternRecall": 1,
+  "benignSignificantRate": 0.1,
+  "validatedEvidenceSpans": 88,
+  "fixtureFailures": [],
+  "independentReviewComplete": false,
+  "realOcrEvaluated": false,
+  "warning": "Templated fixtures are not independent held-out evidence or real-world scam detection accuracy. Eight benign advice examples intentionally expose false positives."
+}

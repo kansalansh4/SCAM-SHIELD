@@ -1,0 +1,2390 @@
+{
+  "status": "developer-generated; independent review pending",
+  "reviewers": [],
+  "fixtures": [
+    {
+      "id": "positive-1-1",
+      "group": "positive",
+      "text": "Hello. This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-1-2",
+      "group": "positive",
+      "text": "Good morning. This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-1-3",
+      "group": "positive",
+      "text": "Hi there. This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-1-4",
+      "group": "positive",
+      "text": "Notice: This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-1-5",
+      "group": "positive",
+      "text": "Message: This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-1-6",
+      "group": "positive",
+      "text": "For your attention: This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-1-7",
+      "group": "positive",
+      "text": "Update: This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-1-8",
+      "group": "positive",
+      "text": "Dear reader, This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-1-9",
+      "group": "positive",
+      "text": "A message for you: This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-1-10",
+      "group": "positive",
+      "text": "Please read this: This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R01"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-2-1",
+      "group": "positive",
+      "text": "Hello. Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-2-2",
+      "group": "positive",
+      "text": "Good morning. Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-2-3",
+      "group": "positive",
+      "text": "Hi there. Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-2-4",
+      "group": "positive",
+      "text": "Notice: Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-2-5",
+      "group": "positive",
+      "text": "Message: Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-2-6",
+      "group": "positive",
+      "text": "For your attention: Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-2-7",
+      "group": "positive",
+      "text": "Update: Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-2-8",
+      "group": "positive",
+      "text": "Dear reader, Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-2-9",
+      "group": "positive",
+      "text": "A message for you: Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-2-10",
+      "group": "positive",
+      "text": "Please read this: Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R02"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-3-1",
+      "group": "positive",
+      "text": "Hello. Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-3-2",
+      "group": "positive",
+      "text": "Good morning. Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-3-3",
+      "group": "positive",
+      "text": "Hi there. Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-3-4",
+      "group": "positive",
+      "text": "Notice: Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-3-5",
+      "group": "positive",
+      "text": "Message: Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-3-6",
+      "group": "positive",
+      "text": "For your attention: Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-3-7",
+      "group": "positive",
+      "text": "Update: Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-3-8",
+      "group": "positive",
+      "text": "Dear reader, Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-3-9",
+      "group": "positive",
+      "text": "A message for you: Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-3-10",
+      "group": "positive",
+      "text": "Please read this: Please share your verification code with us.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-4-1",
+      "group": "positive",
+      "text": "Hello. Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-4-2",
+      "group": "positive",
+      "text": "Good morning. Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-4-3",
+      "group": "positive",
+      "text": "Hi there. Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-4-4",
+      "group": "positive",
+      "text": "Notice: Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-4-5",
+      "group": "positive",
+      "text": "Message: Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-4-6",
+      "group": "positive",
+      "text": "For your attention: Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-4-7",
+      "group": "positive",
+      "text": "Update: Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-4-8",
+      "group": "positive",
+      "text": "Dear reader, Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-4-9",
+      "group": "positive",
+      "text": "A message for you: Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-4-10",
+      "group": "positive",
+      "text": "Please read this: Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R04"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-5-1",
+      "group": "positive",
+      "text": "Hello. You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-5-2",
+      "group": "positive",
+      "text": "Good morning. You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-5-3",
+      "group": "positive",
+      "text": "Hi there. You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-5-4",
+      "group": "positive",
+      "text": "Notice: You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-5-5",
+      "group": "positive",
+      "text": "Message: You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-5-6",
+      "group": "positive",
+      "text": "For your attention: You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-5-7",
+      "group": "positive",
+      "text": "Update: You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-5-8",
+      "group": "positive",
+      "text": "Dear reader, You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-5-9",
+      "group": "positive",
+      "text": "A message for you: You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-5-10",
+      "group": "positive",
+      "text": "Please read this: You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R05"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-6-1",
+      "group": "positive",
+      "text": "Hello. We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-6-2",
+      "group": "positive",
+      "text": "Good morning. We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-6-3",
+      "group": "positive",
+      "text": "Hi there. We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-6-4",
+      "group": "positive",
+      "text": "Notice: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-6-5",
+      "group": "positive",
+      "text": "Message: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-6-6",
+      "group": "positive",
+      "text": "For your attention: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-6-7",
+      "group": "positive",
+      "text": "Update: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-6-8",
+      "group": "positive",
+      "text": "Dear reader, We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-6-9",
+      "group": "positive",
+      "text": "A message for you: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-6-10",
+      "group": "positive",
+      "text": "Please read this: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R06"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-7-1",
+      "group": "positive",
+      "text": "Hello. Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-7-2",
+      "group": "positive",
+      "text": "Good morning. Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-7-3",
+      "group": "positive",
+      "text": "Hi there. Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-7-4",
+      "group": "positive",
+      "text": "Notice: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-7-5",
+      "group": "positive",
+      "text": "Message: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-7-6",
+      "group": "positive",
+      "text": "For your attention: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-7-7",
+      "group": "positive",
+      "text": "Update: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-7-8",
+      "group": "positive",
+      "text": "Dear reader, Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-7-9",
+      "group": "positive",
+      "text": "A message for you: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-7-10",
+      "group": "positive",
+      "text": "Please read this: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R07"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-8-1",
+      "group": "positive",
+      "text": "Hello. Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-8-2",
+      "group": "positive",
+      "text": "Good morning. Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-8-3",
+      "group": "positive",
+      "text": "Hi there. Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-8-4",
+      "group": "positive",
+      "text": "Notice: Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-8-5",
+      "group": "positive",
+      "text": "Message: Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "positive-8-6",
+      "group": "positive",
+      "text": "For your attention: Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "positive-8-7",
+      "group": "positive",
+      "text": "Update: Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "positive-8-8",
+      "group": "positive",
+      "text": "Dear reader, Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "positive-8-9",
+      "group": "positive",
+      "text": "A message for you: Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "positive-8-10",
+      "group": "positive",
+      "text": "Please read this: Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [
+        "R08"
+      ],
+      "expectedAssessment": "some_warning_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-1",
+      "group": "benign",
+      "text": "Hello. Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-2",
+      "group": "benign",
+      "text": "Good morning. Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-3",
+      "group": "benign",
+      "text": "Hi there. Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-4",
+      "group": "benign",
+      "text": "Notice: Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-5",
+      "group": "benign",
+      "text": "Message: The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-6",
+      "group": "benign",
+      "text": "For your attention: We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-7",
+      "group": "benign",
+      "text": "Update: Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-8",
+      "group": "benign",
+      "text": "Dear reader, The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-9",
+      "group": "benign",
+      "text": "A message for you: Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-10",
+      "group": "benign",
+      "text": "Please read this: Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-11",
+      "group": "benign",
+      "text": "Hello. Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-12",
+      "group": "benign",
+      "text": "Good morning. Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-13",
+      "group": "benign",
+      "text": "Hi there. Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-14",
+      "group": "benign",
+      "text": "Notice: The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-15",
+      "group": "benign",
+      "text": "Message: We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-16",
+      "group": "benign",
+      "text": "For your attention: Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-17",
+      "group": "benign",
+      "text": "Update: The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-18",
+      "group": "benign",
+      "text": "Dear reader, Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-19",
+      "group": "benign",
+      "text": "A message for you: Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-20",
+      "group": "benign",
+      "text": "Please read this: Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-21",
+      "group": "benign",
+      "text": "Hello. Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-22",
+      "group": "benign",
+      "text": "Good morning. Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-23",
+      "group": "benign",
+      "text": "Hi there. The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-24",
+      "group": "benign",
+      "text": "Notice: We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-25",
+      "group": "benign",
+      "text": "Message: Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-26",
+      "group": "benign",
+      "text": "For your attention: The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-27",
+      "group": "benign",
+      "text": "Update: Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-28",
+      "group": "benign",
+      "text": "Dear reader, Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-29",
+      "group": "benign",
+      "text": "A message for you: Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-30",
+      "group": "benign",
+      "text": "Please read this: Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-31",
+      "group": "benign",
+      "text": "Hello. Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-32",
+      "group": "benign",
+      "text": "Good morning. The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-33",
+      "group": "benign",
+      "text": "Hi there. We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-34",
+      "group": "benign",
+      "text": "Notice: Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-35",
+      "group": "benign",
+      "text": "Message: The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-36",
+      "group": "benign",
+      "text": "For your attention: Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-37",
+      "group": "benign",
+      "text": "Update: Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-38",
+      "group": "benign",
+      "text": "Dear reader, Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-39",
+      "group": "benign",
+      "text": "A message for you: Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-40",
+      "group": "benign",
+      "text": "Please read this: Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-41",
+      "group": "benign",
+      "text": "Hello. The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-42",
+      "group": "benign",
+      "text": "Good morning. We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-43",
+      "group": "benign",
+      "text": "Hi there. Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-44",
+      "group": "benign",
+      "text": "Notice: The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-45",
+      "group": "benign",
+      "text": "Message: Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-46",
+      "group": "benign",
+      "text": "For your attention: Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-47",
+      "group": "benign",
+      "text": "Update: Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-48",
+      "group": "benign",
+      "text": "Dear reader, Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-49",
+      "group": "benign",
+      "text": "A message for you: Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-50",
+      "group": "benign",
+      "text": "Please read this: The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-51",
+      "group": "benign",
+      "text": "Hello. We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-52",
+      "group": "benign",
+      "text": "Good morning. Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-53",
+      "group": "benign",
+      "text": "Hi there. The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-54",
+      "group": "benign",
+      "text": "Notice: Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-55",
+      "group": "benign",
+      "text": "Message: Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-56",
+      "group": "benign",
+      "text": "For your attention: Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-57",
+      "group": "benign",
+      "text": "Update: Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-58",
+      "group": "benign",
+      "text": "Dear reader, Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-59",
+      "group": "benign",
+      "text": "A message for you: The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-60",
+      "group": "benign",
+      "text": "Please read this: We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-61",
+      "group": "benign",
+      "text": "Hello. Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-62",
+      "group": "benign",
+      "text": "Good morning. The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-63",
+      "group": "benign",
+      "text": "Hi there. Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-64",
+      "group": "benign",
+      "text": "Notice: Team meeting tomorrow at 10 am. Bring the agenda.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-65",
+      "group": "benign",
+      "text": "Message: Read the agenda at https://example.com/meeting.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-66",
+      "group": "benign",
+      "text": "For your attention: Your library books are ready for collection.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-67",
+      "group": "benign",
+      "text": "Update: Your monthly statement is available in the official app.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-68",
+      "group": "benign",
+      "text": "Dear reader, The school trip starts outside the main gate.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "benign-69",
+      "group": "benign",
+      "text": "A message for you: We received your support ticket and will respond tomorrow.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "benign-70",
+      "group": "benign",
+      "text": "Please read this: Your account preferences were updated successfully.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "benign-71",
+      "group": "benign",
+      "text": "Hello. The community newsletter is ready to read.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "benign-72",
+      "group": "benign",
+      "text": "Good morning. Your appointment is on Wednesday at the usual clinic.",
+      "language": "en",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "no_listed_signs",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "benign-advice-1",
+      "group": "benign",
+      "text": "Hello. Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "benign-advice-2",
+      "group": "benign",
+      "text": "Good morning. Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "benign-advice-3",
+      "group": "benign",
+      "text": "Hi there. Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "benign-advice-4",
+      "group": "benign",
+      "text": "Notice: Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "benign-advice-5",
+      "group": "benign",
+      "text": "Message: Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "benign-advice-6",
+      "group": "benign",
+      "text": "For your attention: Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "benign-advice-7",
+      "group": "benign",
+      "text": "Update: Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "benign-advice-8",
+      "group": "benign",
+      "text": "Dear reader, Never share your OTP with anyone. This is security advice.",
+      "language": "en",
+      "interaction": "none",
+      "incomplete": false,
+      "expectedRules": [
+        "R03"
+      ],
+      "expectedAssessment": "significant_warning_signs",
+      "expectedFirstAction": "pause",
+      "note": "Known false positive: negated security advice. Count this as benign significant, not a successful fraud classification."
+    },
+    {
+      "id": "insufficient-1",
+      "group": "ambiguous",
+      "text": "Hello. This is urgent. Review the notice today.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-2",
+      "group": "ambiguous",
+      "text": "Good morning. Your account has been suspended. Contact the sender.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-3",
+      "group": "ambiguous",
+      "text": "Hi there. Please share your verification code with us.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-4",
+      "group": "ambiguous",
+      "text": "Notice: Please buy gift cards for this payment.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-5",
+      "group": "ambiguous",
+      "text": "Message: You won a prize. Pay the fee to claim it.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "insufficient-6",
+      "group": "ambiguous",
+      "text": "For your attention: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-7",
+      "group": "ambiguous",
+      "text": "Update: Please download TeamViewer for remote support.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-8",
+      "group": "ambiguous",
+      "text": "Dear reader, Review the message at https://bit.ly/example today.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-9",
+      "group": "ambiguous",
+      "text": "A message for you: This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-10",
+      "group": "ambiguous",
+      "text": "Please read this: Your account has been suspended. Contact the sender.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "insufficient-11",
+      "group": "ambiguous",
+      "text": "Hello. Please share your verification code with us.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-12",
+      "group": "ambiguous",
+      "text": "Good morning. Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-13",
+      "group": "ambiguous",
+      "text": "Hi there. You won a prize. Pay the fee to claim it.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-14",
+      "group": "ambiguous",
+      "text": "Notice: We offer guaranteed profit on your investment.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-15",
+      "group": "ambiguous",
+      "text": "Message: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "insufficient-16",
+      "group": "ambiguous",
+      "text": "For your attention: Review the message at https://bit.ly/example today.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-17",
+      "group": "ambiguous",
+      "text": "Update: This is urgent. Review the notice today.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-18",
+      "group": "ambiguous",
+      "text": "Dear reader, Your account has been suspended. Contact the sender.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-19",
+      "group": "ambiguous",
+      "text": "A message for you: Please share your verification code with us.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-20",
+      "group": "ambiguous",
+      "text": "Please read this: Please buy gift cards for this payment.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "insufficient-21",
+      "group": "ambiguous",
+      "text": "Hello. You won a prize. Pay the fee to claim it.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-22",
+      "group": "ambiguous",
+      "text": "Good morning. We offer guaranteed profit on your investment.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-23",
+      "group": "ambiguous",
+      "text": "Hi there. Please download TeamViewer for remote support.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-24",
+      "group": "ambiguous",
+      "text": "Notice: Review the message at https://bit.ly/example today.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-25",
+      "group": "ambiguous",
+      "text": "Message: This is urgent. Review the notice today.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "insufficient-26",
+      "group": "ambiguous",
+      "text": "For your attention: Your account has been suspended. Contact the sender.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-27",
+      "group": "ambiguous",
+      "text": "Update: Please share your verification code with us.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-28",
+      "group": "ambiguous",
+      "text": "Dear reader, Please buy gift cards for this payment.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-29",
+      "group": "ambiguous",
+      "text": "A message for you: You won a prize. Pay the fee to claim it.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-30",
+      "group": "ambiguous",
+      "text": "Please read this: We offer guaranteed profit on your investment.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "insufficient-31",
+      "group": "ambiguous",
+      "text": "Hello. Please download TeamViewer for remote support.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-32",
+      "group": "ambiguous",
+      "text": "Good morning. Review the message at https://bit.ly/example today.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-33",
+      "group": "ambiguous",
+      "text": "Hi there. This is urgent. Review the notice today.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-34",
+      "group": "ambiguous",
+      "text": "Notice: Your account has been suspended. Contact the sender.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-35",
+      "group": "ambiguous",
+      "text": "Message: Please share your verification code with us.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    },
+    {
+      "id": "insufficient-36",
+      "group": "ambiguous",
+      "text": "For your attention: Please buy gift cards for this payment.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "none",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "pause"
+    },
+    {
+      "id": "insufficient-37",
+      "group": "ambiguous",
+      "text": "Update: You won a prize. Pay the fee to claim it.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "clicked",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "stop"
+    },
+    {
+      "id": "insufficient-38",
+      "group": "ambiguous",
+      "text": "Dear reader, We offer guaranteed profit on your investment.",
+      "language": "unsure",
+      "incomplete": false,
+      "interaction": "shared_password",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "secure-account"
+    },
+    {
+      "id": "insufficient-39",
+      "group": "ambiguous",
+      "text": "A message for you: Please download TeamViewer for remote support.",
+      "language": "en",
+      "incomplete": true,
+      "interaction": "shared_details",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "protect-details"
+    },
+    {
+      "id": "insufficient-40",
+      "group": "ambiguous",
+      "text": "Please read this: Review the message at https://bit.ly/example today.",
+      "language": "other",
+      "incomplete": false,
+      "interaction": "sent_money",
+      "expectedRules": [],
+      "expectedAssessment": "insufficient_information",
+      "expectedFirstAction": "bank"
+    }
+  ]
+}

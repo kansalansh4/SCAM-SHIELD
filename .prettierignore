@@ -1,0 +1,7 @@
+node_modules
+functions/node_modules
+functions/shared
+dist
+package-lock.json
+functions/package-lock.json
+tests/fixtures

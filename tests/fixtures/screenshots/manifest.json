@@ -1,0 +1,245 @@
+{
+  "status": "synthetic; real OCR and independent readability review pending",
+  "images": [
+    {
+      "file": "screenshot-01.png",
+      "text": "Hello. This is urgent. Review the notice today.",
+      "fixtureId": "positive-1-1",
+      "fontSize": 18,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-02.png",
+      "text": "Notice: This is urgent. Review the notice today.",
+      "fixtureId": "positive-1-4",
+      "fontSize": 24,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-03.png",
+      "text": "Update: This is urgent. Review the notice today.",
+      "fixtureId": "positive-1-7",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-04.png",
+      "text": "Please read this: This is urgent. Review the notice today.",
+      "fixtureId": "positive-1-10",
+      "fontSize": 18,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-05.png",
+      "text": "Hi there. Your account has been suspended. Contact the sender.",
+      "fixtureId": "positive-2-3",
+      "fontSize": 24,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-06.png",
+      "text": "For your attention: Your account has been suspended. Contact the sender.",
+      "fixtureId": "positive-2-6",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-07.png",
+      "text": "A message for you: Your account has been suspended. Contact the sender.",
+      "fixtureId": "positive-2-9",
+      "fontSize": 18,
+      "contrast": "normal",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-08.png",
+      "text": "Good morning. Please share your verification code with us.",
+      "fixtureId": "positive-3-2",
+      "fontSize": 24,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-09.png",
+      "text": "Message: Please share your verification code with us.",
+      "fixtureId": "positive-3-5",
+      "fontSize": 32,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-10.png",
+      "text": "Dear reader, Please share your verification code with us.",
+      "fixtureId": "positive-3-8",
+      "fontSize": 18,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-11.png",
+      "text": "Hello. Please buy gift cards for this payment.",
+      "fixtureId": "positive-4-1",
+      "fontSize": 24,
+      "contrast": "normal",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-12.png",
+      "text": "Notice: Please buy gift cards for this payment.",
+      "fixtureId": "positive-4-4",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-13.png",
+      "text": "Update: Please buy gift cards for this payment.",
+      "fixtureId": "positive-4-7",
+      "fontSize": 18,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-14.png",
+      "text": "Please read this: Please buy gift cards for this payment.",
+      "fixtureId": "positive-4-10",
+      "fontSize": 24,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-15.png",
+      "text": "Hi there. You won a prize. Pay the fee to claim it.",
+      "fixtureId": "positive-5-3",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-16.png",
+      "text": "For your attention: You won a prize. Pay the fee to claim it.",
+      "fixtureId": "positive-5-6",
+      "fontSize": 18,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-17.png",
+      "text": "A message for you: You won a prize. Pay the fee to claim it.",
+      "fixtureId": "positive-5-9",
+      "fontSize": 24,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-18.png",
+      "text": "Good morning. We offer guaranteed profit on your investment.",
+      "fixtureId": "positive-6-2",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-19.png",
+      "text": "Message: We offer guaranteed profit on your investment.",
+      "fixtureId": "positive-6-5",
+      "fontSize": 18,
+      "contrast": "normal",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-20.png",
+      "text": "Dear reader, We offer guaranteed profit on your investment.",
+      "fixtureId": "positive-6-8",
+      "fontSize": 24,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-21.png",
+      "text": "Hello. Please download TeamViewer for remote support.",
+      "fixtureId": "positive-7-1",
+      "fontSize": 32,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-22.png",
+      "text": "Notice: Please download TeamViewer for remote support.",
+      "fixtureId": "positive-7-4",
+      "fontSize": 18,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-23.png",
+      "text": "Update: Please download TeamViewer for remote support.",
+      "fixtureId": "positive-7-7",
+      "fontSize": 24,
+      "contrast": "normal",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-24.png",
+      "text": "Please read this: Please download TeamViewer for remote support.",
+      "fixtureId": "positive-7-10",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-25.png",
+      "text": "Hi there. Review the message at https://bit.ly/example today.",
+      "fixtureId": "positive-8-3",
+      "fontSize": 18,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-26.png",
+      "text": "For your attention: Review the message at https://bit.ly/example today.",
+      "fixtureId": "positive-8-6",
+      "fontSize": 24,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-27.png",
+      "text": "A message for you: Review the message at https://bit.ly/example today.",
+      "fixtureId": "positive-8-9",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-28.png",
+      "text": "Good morning. Read the agenda at https://example.com/meeting.",
+      "fixtureId": "benign-2",
+      "fontSize": 18,
+      "contrast": "normal",
+      "cropMargin": 8
+    },
+    {
+      "file": "screenshot-29.png",
+      "text": "Message: The school trip starts outside the main gate.",
+      "fixtureId": "benign-5",
+      "fontSize": 24,
+      "contrast": "reduced",
+      "cropMargin": 40
+    },
+    {
+      "file": "screenshot-30.png",
+      "text": "Dear reader, The community newsletter is ready to read.",
+      "fixtureId": "benign-8",
+      "fontSize": 32,
+      "contrast": "normal",
+      "cropMargin": 8
+    }
+  ]
+}
