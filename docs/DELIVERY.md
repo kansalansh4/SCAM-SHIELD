@@ -28,7 +28,7 @@ Final application checks used Node 22.23.2 and Java 21.0.12.1 on macOS. Earlier 
 - Live callable smoke: all four callables reject unauthenticated requests.
 - Synthetic benchmark: **200 fixtures**, no expected-output mismatches, 88 validated spans, 100% listed-pattern recall on templated positives and 10% benign-significant rate. Eight benign security-advice examples intentionally expose the negation limitation. These are regression measurements, not independently validated release metrics or real-world detection accuracy.
 - 30 reproducible synthetic screenshot files and ground-truth manifest supplied. Real-provider word recognition has **not** been measured.
-- npm production audit: **0 vulnerabilities** for root production dependencies and **0** for Functions dependencies. A scoped `gaxios@6 → uuid 11.1.1` override addresses a transitive advisory; SDK loading and emulator flows were rechecked.
+- npm production audit: **0 vulnerabilities** for root production dependencies and **0** for Functions dependencies. A version-scoped `uuid@<11.1.1 → 11.1.1` override addresses a transitive advisory; SDK loading and emulator flows were rechecked.
 - Full development audit: **9 moderate findings**, zero high/critical at the recorded check. They affect the Firebase CLI/test tooling dependency graph, including OpenTelemetry/csv/stream/uuid/Vitest tooling. Do not expose development/test servers publicly; recheck upstream updates before release. No force downgrade of the Firebase CLI was applied.
 
 No automated evidence is claimed for Safari/Firefox/Edge, screen-reader testing, measured color contrast, five moderated participants, real email delivery, real Vision, cloud latency/reliability, billing, scheduler execution, IAM, or rollback rehearsal. See RELEASE.md for exact gates and accountable owners.
@@ -46,3 +46,5 @@ No automated evidence is claimed for Safari/Firefox/Edge, screen-reader testing,
 Owner decisions: launch countries, cloud region, project IDs, billing budget, privacy contact/processor review, IAM/App Check configuration and authorization for production deployment. QA/product: two benchmark reviewers, held-out validation, moderated usability and full browser/accessibility acceptance. Technical owner: real OCR smoke, staging performance, cloud monitoring, TTL/cleanup/deletion retry and rollback rehearsal.
 
 This is an implemented local MVP with release preparation, not a production-ready certification. P3 release sign-off is intentionally pending these external inputs.
+
+Deployment follow-up: corrected the security override selector for compatibility with npm 10 clean installs; validated the Functions lockfile using a clean npm 10.9.4 CI simulation.
