@@ -68,7 +68,7 @@ export function AuthForm() {
             ? "Create your account"
             : "Welcome back"}
       </h1>
-      <p>Verified accounts help us keep checking available and limit abuse.</p>
+      <p>Sign in with your verified email to use Scam Shield.</p>
       <form onSubmit={submit}>
         <label>
           Email address

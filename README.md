@@ -1,3 +1,9 @@
+# Free browser-based release
+
+Live site: https://scam-shield-wine-nine.vercel.app
+
+Message analysis and screenshot OCR run on your device; Firebase Spark handles email/password sign-in. No billing account or service-account key is required. See [free deployment guide](docs/FREE_DEPLOYMENT.md) for architecture changes and limits. The sections below also retain the original Firebase server implementation for reference.
+
 # Scam Shield
 
 A mobile-friendly English warning-sign checker for suspicious messages and screenshots. React + Vite + Tailwind, Firebase Authentication/Firestore/Functions/Hosting, and Google Cloud Vision. Analysis uses deterministic `rules-1.0`; it does not verify senders or establish that a message is safe.
