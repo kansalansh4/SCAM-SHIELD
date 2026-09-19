@@ -31,6 +31,6 @@ Local emulator `.env.local` and `.secret.local` files are explicitly excluded fr
 
 ## Current status
 
-Code pushed; deployment workflow prepared. Firebase authentication, project selection and deployment configuration are pending. Real Vision, production App Check, billing/IAM, provider/privacy review and the release acceptance in RELEASE.md have not been verified. Do not present an unconfigured frontend as a functioning public checker.
+Code pushed; deployment workflow prepared. Firebase authentication is complete. The owner selected Mumbai (`asia-south1`) for the backend and database. Creation of the requested project `scam-shield-kansalansh4` was blocked by Google Cloud Terms of Service acceptance; project creation, billing and deployment configuration remain pending. Real Vision, production App Check, billing/IAM, provider/privacy review and the release acceptance in RELEASE.md have not been verified. Do not present an unconfigured frontend as a functioning public checker.
 
 References: [Firebase CLI CI authentication](https://firebase.google.com/docs/cli#cli-ci-systems) and [Google GitHub authentication action](https://github.com/google-github-actions/auth).
