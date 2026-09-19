@@ -88,3 +88,7 @@ Do not commit `.env.local`, service-account JSON, tokens, passwords or submitted
 This repository contains deployment configuration but does not provision or publish a cloud project. The owner must supply separate projects, region, billing/IAM, App Check, email templates/action URLs, processor review, geography, budget, monitoring and release acceptance. See [RELEASE.md](docs/RELEASE.md) before any `firebase deploy`.
 
 The emulator startup script creates ignored local Functions region and dummy-secret files if missing. These are demo-only defaults; it never supplies production credentials.
+
+## Deployment workflow
+
+[Deploy to Firebase](.github/workflows/deploy.yml) is a manual GitHub Actions workflow with staging/production environments. It verifies the application before deployment and requires real Firebase configuration. See [GitHub deployment setup](docs/DEPLOYMENT.md). The existence of the workflow does not mean a live deployment has succeeded.

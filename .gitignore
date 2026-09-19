@@ -11,3 +11,5 @@ playwright-report/
 test-results/
 coverage/
 .DS_Store
+# Ephemeral GitHub Actions Google credentials
+gha-creds-*.json

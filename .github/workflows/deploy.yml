@@ -1,0 +1,83 @@
+name: Deploy to Firebase
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Configured GitHub deployment environment
+        type: choice
+        required: true
+        default: staging
+        options: [staging, production]
+permissions:
+  contents: read
+concurrency:
+  group: firebase-${{ inputs.target }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - run: npm ci
+      - run: npm ci --prefix functions
+      - run: npm run prepare:functions
+      - run: npm run lint
+      - run: npm test
+      - run: npm run benchmark
+      - run: npm run test:integration
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e:full
+  deploy:
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.target }}
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+      VITE_USE_EMULATORS: "false"
+      VITE_FIREBASE_API_KEY: ${{ vars.VITE_FIREBASE_API_KEY }}
+      VITE_FIREBASE_PROJECT_ID: ${{ vars.FIREBASE_PROJECT_ID }}
+      VITE_FIREBASE_AUTH_DOMAIN: ${{ vars.VITE_FIREBASE_AUTH_DOMAIN }}
+      VITE_FIREBASE_APP_ID: ${{ vars.VITE_FIREBASE_APP_ID }}
+      VITE_FUNCTIONS_REGION: ${{ vars.FUNCTIONS_REGION }}
+      VITE_APPCHECK_SITE_KEY: ${{ vars.VITE_APPCHECK_SITE_KEY }}
+      FUNCTIONS_REGION: ${{ vars.FUNCTIONS_REGION }}
+      WORKLOAD_IDENTITY_PROVIDER: ${{ vars.WORKLOAD_IDENTITY_PROVIDER }}
+      FIREBASE_DEPLOY_SERVICE_ACCOUNT: ${{ vars.FIREBASE_DEPLOY_SERVICE_ACCOUNT }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require real deployment configuration
+        shell: bash
+        run: |
+          for name in FIREBASE_PROJECT_ID VITE_FIREBASE_API_KEY VITE_FIREBASE_AUTH_DOMAIN VITE_FIREBASE_APP_ID FUNCTIONS_REGION VITE_APPCHECK_SITE_KEY WORKLOAD_IDENTITY_PROVIDER FIREBASE_DEPLOY_SERVICE_ACCOUNT; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing deployment environment variable: $name"
+              exit 1
+            fi
+          done
+          case "$FIREBASE_PROJECT_ID" in demo-*) echo "::error::Demo projects cannot be deployed"; exit 1;; esac
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm ci --prefix functions
+      - run: npm run build
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          project_id: ${{ vars.FIREBASE_PROJECT_ID }}
+          workload_identity_provider: ${{ vars.WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.FIREBASE_DEPLOY_SERVICE_ACCOUNT }}
+      - name: Deploy application, rules and functions
+        run: npx firebase deploy --project "$FIREBASE_PROJECT_ID" --only firestore,functions,hosting --non-interactive
