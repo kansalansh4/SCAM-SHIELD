@@ -28,6 +28,7 @@ vi.mock("../src/services/firebase.js", () => ({
   call: mocks.call,
   errorMessage: () => "A recoverable error",
   emulator: false,
+  freeDeployment: false,
 }));
 afterEach(() => {
   cleanup();

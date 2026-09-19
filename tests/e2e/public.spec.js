@@ -24,7 +24,7 @@ test("screenshot notice, deliberate mode switch and accessible keyboard tabs", a
     page.getByRole("tab", { name: "Upload screenshot" }),
   ).toHaveAttribute("aria-selected", "true");
   await expect(
-    page.getByText("When you choose Extract text", { exact: false }),
+    page.getByText(/When you choose Extract text|Text is extracted on your device/),
   ).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Extract text" }),

@@ -16,3 +16,5 @@ gha-creds-*.json
 
 # Local Vercel project linkage
 .vercel/
+
+public/ocr/

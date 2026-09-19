@@ -309,7 +309,7 @@ export function Account() {
       setPassword("");
       await logout();
       setNotice(
-        "Deletion has started. Access is blocked while your account data is removed.",
+        "Your account deletion request completed. You have been signed out.",
       );
     } catch (e) {
       setNotice(errorMessage(e));

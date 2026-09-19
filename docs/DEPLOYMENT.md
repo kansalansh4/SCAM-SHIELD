@@ -1,4 +1,6 @@
-# Deployment: Vercel frontend and Firebase backend
+# Deployment: browser-based free version
+
+The owner selected browser-based analysis and OCR with Firebase Spark Authentication. See [FREE_DEPLOYMENT.md](FREE_DEPLOYMENT.md) for the current architecture, setup and scope changes. Below is historical configuration for the previous server architecture, not requirements for the free version.
 
 Repository: https://github.com/kansalansh4/SCAM-SHIELD
 

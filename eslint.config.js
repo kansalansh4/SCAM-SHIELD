@@ -7,6 +7,7 @@ export default [
       "functions/node_modules/**",
       "functions/shared/**",
       "dist/**",
+      "public/ocr/**",
       "test-results/**",
       "playwright-report/**",
     ],

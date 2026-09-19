@@ -16,45 +16,40 @@ function Privacy() {
       <span className="eyebrow">PRIVACY NOTICE · VERSION 1.0</span>
       <h1>Your message is yours.</h1>
       <p>
-        Message text, screenshots, extracted text and reports stay in browser or
-        server memory for the active check. We do not save them to our database,
-        object storage, analytics, or scan history. Closing or refreshing this
-        tab clears the draft.
+        Message text, screenshots, extracted text and reports stay in browser
+        memory for the active check. We do not save them to our database, object
+        storage, analytics, or scan history. Closing or refreshing this tab
+        clears the draft.
       </p>
-      <h2>Screenshot processing</h2>
+      <h2>Processing on your device</h2>
       <p>
-        Only when you choose Extract text is your screenshot sent through
-        Firebase Cloud Functions to Google Cloud Vision. You review the
-        extracted text before analysis. Application non-retention is not a
-        guarantee about the provider’s retention.
+        In the free web version, messages are checked in your browser.
+        Screenshot text is extracted on your device using Tesseract.js. Images
+        and message text are not uploaded. The OCR engine and English model
+        download from this site. Review extracted text before checking it.
       </p>
-      <h2>Account and operational data</h2>
+      <h2>Account data</h2>
       <p>
-        Firebase Authentication handles your email and password. We store
-        account lifecycle data, quota counts, request IDs, statuses and a keyed
-        payload fingerprint for duplicate detection. We do not store message
-        bodies, URLs, excerpts, reports or images. Session-based sign-in storage
-        is separate from scan data. No content is collected for training.
-      </p>
-      <p>
-        Request metadata has a 48-hour policy, quota metadata 7 days and
-        scrubbed operational logs 30 days. Scheduled cleanup and backup TTL
-        remove expired records; outages may delay cleanup. A content-free
-        deletion completion record remains for up to 7 days to prevent late
-        requests from recreating an account.
+        Firebase Authentication handles your email, password and verification.
+        This version creates no database profiles, scan history, quota records
+        or scan metadata. Sign-in lasts for your browser session. Vercel serves
+        the site assets; provider infrastructure may retain access/security
+        logs. We do not send scan content to those logs or collect it for
+        training.
       </p>
       <h2>Delete your account</h2>
       <p>
         From <Link to="/account">Account</Link>, verify your email and confirm
-        your password to request deletion. Checks stop immediately; a retryable
-        job deletes account metadata and the authentication account.
+        your password to delete your Firebase login. Browser drafts are cleared
+        on sign-out, refresh or closing the tab. This version stores no scan
+        data on a server to delete.
       </p>
-      <h2>Deployment status</h2>
+      <h2>About the free version</h2>
       <p>
-        This notice describes the implementation. Public launch requires the
-        owner to verify cloud processor terms, logging/backups, deployment
-        region, target countries and a privacy contact. Those decisions have not
-        yet been supplied.
+        Sign-in is part of the app flow, not protection for a private analysis
+        service. The checking rules run locally, and there are no
+        server-enforced daily checking limits. Results are guidance, not proof
+        of authenticity.
       </p>
     </article>
   );

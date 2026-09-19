@@ -13,7 +13,12 @@ import {
   FileText,
 } from "lucide-react";
 import { useAuth } from "../app/AuthContext.jsx";
-import { call, errorMessage, emulator } from "../services/firebase.js";
+import {
+  call,
+  errorMessage,
+  emulator,
+  freeDeployment,
+} from "../services/firebase.js";
 import {
   ASSESSMENTS,
   INTERACTIONS,
@@ -249,18 +254,24 @@ export function Checker() {
     setPhase(kind === "ocr" ? "extracting" : "analyzing");
     try {
       if (kind === "ocr") {
-        const imageBase64 = await new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve(reader.result.split(",")[1]);
-          reader.onerror = reject;
-          reader.readAsDataURL(file);
-        });
-        if (current !== op.current) return;
-        const result = await call("extractScreenshot", {
-          requestId: crypto.randomUUID(),
-          imageBase64,
-          mimeType: file.type,
-        });
+        let result;
+        if (freeDeployment) {
+          const { extractLocal } = await import("../services/ocr.js");
+          result = { extractedText: await extractLocal(file) };
+        } else {
+          const imageBase64 = await new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result.split(",")[1]);
+            reader.onerror = reject;
+            reader.readAsDataURL(file);
+          });
+          if (current !== op.current) return;
+          result = await call("extractScreenshot", {
+            requestId: crypto.randomUUID(),
+            imageBase64,
+            mimeType: file.type,
+          });
+        }
         if (current !== op.current) return;
         setText(result.extractedText);
         setConfirmed(false);
@@ -411,9 +422,9 @@ export function Checker() {
                   />
                 )}
                 <p className="processing-notice">
-                  When you choose Extract text, this image is sent through our
-                  server to Google Cloud Vision. We do not save the image or
-                  extracted text.{" "}
+                  {freeDeployment
+                    ? "Text is extracted on your device. Your screenshot is not uploaded. The first extraction downloads the OCR engine; on slower devices it can take a minute. Reviewed text is checked locally too. "
+                    : "When you choose Extract text, this image is sent through our server to Google Cloud Vision. We do not save the image or extracted text. "}
                   <Link to="/privacy">How your data is handled</Link>
                 </p>
                 <button
