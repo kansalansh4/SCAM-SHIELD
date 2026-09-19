@@ -1,8 +1,8 @@
-# Firebase deployment
+# Deployment: Vercel frontend and Firebase backend
 
 Repository: https://github.com/kansalansh4/SCAM-SHIELD
 
-The complete application is on `main`. `.github/workflows/deploy.yml` provides a manually triggered staging/production deployment. A live URL is not available until Firebase access and project configuration are supplied and deployment succeeds.
+The complete application is on `main`. The owner selected Vercel for frontend hosting. `vercel.json` configures the Vite build, SPA route fallback and security headers. Firebase remains the authentication, database, callable-function and OCR backend; moving frontend hosting does not resolve its pending setup. A Vercel deployment without cloud configuration displays the existing setup-pending state; login and checks are unavailable. `.github/workflows/deploy.yml` provides a manually triggered staging/production deployment. A live URL is not available until Firebase access and project configuration are supplied and deployment succeeds.
 
 ## First deployment prerequisites
 
@@ -31,6 +31,14 @@ Local emulator `.env.local` and `.secret.local` files are explicitly excluded fr
 
 ## Current status
 
-Code pushed; deployment workflow prepared. Firebase authentication is complete. The owner selected Mumbai (`asia-south1`) for the backend and database. Creation of the requested project `scam-shield-kansalansh4` was blocked by Google Cloud Terms of Service acceptance; project creation, billing and deployment configuration remain pending. Real Vision, production App Check, billing/IAM, provider/privacy review and the release acceptance in RELEASE.md have not been verified. Do not present an unconfigured frontend as a functioning public checker.
+Code pushed; deployment workflow prepared. Firebase authentication is complete. The owner selected Mumbai (`asia-south1`) for the backend and database. The Google Cloud project `scam-shield-kansalansh4` now exists and appears in the signed-in account’s available-project list (verified 2026-09-19). Enabling Firebase on it returns HTTP 403 PERMISSION_DENIED; the Firebase project list is still empty. The owner must resolve Firebase project setup/access in the console before billing and deployment configuration can continue. Real Vision, production App Check, billing/IAM, provider/privacy review and the release acceptance in RELEASE.md have not been verified. Do not present an unconfigured frontend as a functioning public checker.
 
 References: [Firebase CLI CI authentication](https://firebase.google.com/docs/cli#cli-ci-systems) and [Google GitHub authentication action](https://github.com/google-github-actions/auth).
+
+## Vercel setup
+
+Import `kansalansh4/SCAM-SHIELD`, select Vite, repository root `.`, Node.js 22.x, and deploy `main`. Build/install/output settings are checked in. Never set `VITE_USE_EMULATORS=true` on Vercel.
+
+For a functional deployment, set the public variables from `.env.example` to the real Firebase web app, `VITE_USE_EMULATORS=false`, and `VITE_FUNCTIONS_REGION=asia-south1`. Register the final Vercel hostname in Firebase Auth authorized domains and the reCAPTCHA Enterprise/App Check site. Configure email action URLs for that hostname. Deploy Firebase backend resources separately with `--only firestore,functions` after cloud access and billing are resolved. Rebuild Vercel after changing Vite variables, since they are embedded at build time. Never put backend secrets or service-account credentials in VITE variables.
+
+Source: [Vercel Vite deployment and SPA routing](https://vercel.com/docs/frameworks/frontend/vite).
